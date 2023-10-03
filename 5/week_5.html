@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: blueviolet;
+        }
+        a:visited{
+            color:red;
+        }
+        a:hover{
+            color: royalblue;
+            font-size: 50px;
+        }
+        a:active{
+            color:chocolate;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">자유계시판</a>
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접형제선택자</title>
+    <style>
+        #1{
+            h1+h2{
+            color:rosybrown;
+        }
+        }
+        h1~h2{
+            color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="1">
+        <h2>Html</h2>
+        <h1>hTml</h1>
+        <h2>hmTl</h2>
+        <h2>htmL</h2>
+    </div>
+    <h2>HTml</h2>
+    <h1>hTMl</h1>
+    <h2>htML</h2>
+    <h2>HtmL</h2>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color:royalblue
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>HTML</p>
+        <ul>
+            <li><p>Html</p></li>
+            <li><p>hTml</p></li>
+            <li>htMl</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p,#title{
+            color: red;
+        }
+
+        p>strong{
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">group 선택자</h1>
+    <p>여러 선택자를 그룹지움</p>
+    <h1 id="title1">자식 선택자</h1>
+    <p>선택1</p>
+    <p><strong>선택2</strong></p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <sytle>
+        
+    </sytle>
+</head>
+
+<body>
+    <div class="singer">
+        <p>가수</p>
+        <p><span>가수</span>를 소개하는 Page입니다.</p>
+    </div>
+    <div class="TV">
+        <p>TV</p>
+        <p><span>TV</span>를 소개하는 Page입니다.</p>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(/5/css/sytle.css);
+    </style>
+</head>
+<body>
+    <hr>
+    <p style="font-size: 30px; color: purple;">언어의 특징 알아보기</p>
+    <hr>
+    <ul>
+        <li><a href="#">html</a></li>
+        <li><a href="#" target="_blank">css</a></li>
+        <li><a href="#" target="_blank">javascript</a></li>
+    </ul>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 선택자</title>
+    <style>
+        h1[class="1"] {
+            color: skyblue;
+        }
+        p[class="2"] {
+            color: blue
+        }
+        p[id="3"] {
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="1">클래스 선택자</h1>
+    <p class="2">class</p>
+    <p id="3">Class1</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [href]{
+            color: aqua;
+            display: block;
+        }
+
+        [target="blank"] {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com">NAVER</a>
+    <a href="https://www.naver.com" target="blank">새창으로 열림</a>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 50px;
+            color: green;
+        }
+
+        hr{
+            border: 5px solid black;
+        }
+
+        #food {
+            font-size: 30px;
+            color: blue;
+        }
+
+        p{
+            font-size: 30px;
+            color:brown;
+        }
+
+        .list{
+            font-size: 20px;
+            color: red;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>제 1회 음식 축제</h1>
+    <hr>
+    <p id="food">각 나라의 다양한 음식을 체험해 보아요!</p>
+    <hr style="border: 2px solid black;">
+    <p>***참가국***</p>
+    <ul class="list">
+        <li>한국</li>
+        <li>미국</li>
+        <li>일본</li>
+    </ul>
+    <hr style="border: 2px solid black;">
+    <p>*** 장소와 일시 ***</p>
+    <ul class="list">
+        <li>일시 : 2023년 9월 26일</li>
+        <li>장소 : 경기도 남양주시</li>
+    </ul>
+</body>
+</html>
+-->

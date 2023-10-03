@@ -1,0 +1,17 @@
+hr {
+    border:2px solid orange;
+}
+
+a {
+    font-size: 30px;
+    color: darkblue;
+}
+
+a[target="_blank"] {
+    font-size: 50px;
+    color:brown
+}
+
+.singer {
+    color: blueviolet;
+}

@@ -1,0 +1,17 @@
+h1 > strong {
+    color: red;
+}
+
+ul li{
+    font-size: 30px;
+    color: blue;
+}
+
+p{
+    font-size: 50px;
+}
+
+p + a{
+    font-size: 30px;
+    color: brown;
+}
