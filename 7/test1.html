@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS의 특징 : 단위실습</title>
+    <style>
+        #shop {
+            color: blueviolet;
+            font-size: 50px;
+            text-align: center;
+            list-style: none;
+        }
+        ul>li.text {
+            font-size: 50%;
+            color: green;
+        }    
+        ul>li>span.one {
+            color: blue;
+        }
+        ul>li>span.two {
+            color: red;
+            font-size: 1.5em;
+        }
+        li {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="shop">
+        <li id="shop">라벤더</li>
+        <li><img src="./img/flower.jpg" style="width: 300px;"></li>
+        <li class="text">효능 : 주로 목욕제로 쓰이며 <span class="one">마음을 진정</span>시키며 긴장을 풀어짐</li>
+        <li class="text">키우는 법 : 직사광선은 피하고 통풍이 잘되 창가에서 키움</li>
+        <li class="text">할인가격:<span class="two">5,000원</span></li>
+    </ul>
+    <ul id="data">
+        <li>주식회사 : kungbuk university</li>
+        <li>전화번호 : 000-0000-0000</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+    구조적 가상 클래스 선택자
+       - :first-child, :last-child
+       - :nth-child(n), :nth-last-child(n)
+       - :nth-of-type(n), nth-last-of-type(n)
+       - :first-of-type
+    가상요소 선택자
+       - ::before
+       - ::after
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조적 가상 클래스 선택자</title>
+    <style>
+        /*
+        p:first-child{
+            color: red;
+        }
+        p:last-child{
+            font-size: 20px;
+            color: green;
+        }
+        p:nth-child(3){
+            color: blue;
+        }
+        p:nth-last-child(3){
+            color:brown;
+        }
+        p:nth-of-type(2){
+            color:red;
+        }
+        p:nth-last-of-type(1){
+            color:aqua;
+        }
+        */
+        p::before{
+            content: '접두사';
+        }
+        p::after{
+            content: '접미사';
+        }
+    </style>
+</head>
+<body>
+    <p>css1</p>
+    <p>css2</p>
+    <div>
+        <p>css3</p>
+        <p>css4</p>
+        <p>css5</p>
+    </div>
+    <p>css6</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* https://specificity.keegan.st */
+        .ch{
+            color:red; /* 0 0 1 0 */
+        }
+        h1{
+            color:blue; /* 0 0 0 1 */
+        }
+        nav>h2{} /* 0 0 0 2 */
+        nav .title{} /* 0 0 1 1 */
+        #main .sub{} /* 0 1 1 0 */
+        a:hover{} /* 0 0 1 1 */
+        #sub #main .title{} /* 0 2 1 0 */
+    </style>
+</head>
+<body>
+    <h1 class="ch">css</h1>
+</body>
+</html>

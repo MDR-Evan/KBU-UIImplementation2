@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+    입력 요소 가상 클래스 선택자
+       - focus
+       - cheched
+       - disabled
+       - enabled
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 요소 가상 클래스 선택자</title>
+    <style>
+        input:focus{
+            color:white;
+        }
+        input:checked+label{
+            color: darkorange;
+        }
+        input:disabled+label, button:disabled{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    이름 : <input id="name" type="text"><br>
+
+    취미 : <input id="ch1" type="radio" value="1" disabled>
+    <label for="ch1">피아노</label>&nbsp;&nbsp;&nbsp;
+
+    <input for="ch2" type="radio" value="2">
+    <label for="ch2">독서</label>&nbsp;&nbsp;&nbsp;
+
+    <input id="ch3" type="radio" value="3">
+    <label for="ch3">먹방</label><br>
+
+    <button disabled>Click</button>
+</body>
+</html>

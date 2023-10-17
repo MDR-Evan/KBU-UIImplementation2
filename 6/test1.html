@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: green;
+        }
+        h1:hover{
+            font-size: 50px;
+            color: blueviolet;
+        }
+        input:focus{
+            color: red;
+        }
+        input:checked+label{
+            color: red;
+        }
+        textarea:enabled{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입양식</h1>
+    <table>
+        <tr>
+            <td>- 아이디</td>
+            <td><input type="text" placeholder="7자이상"></td>
+        </tr>
+        <tr>
+            <td>- 비밀번호</td>
+            <td><input type="password" placeholder="비밀번호"></td>
+        </tr>
+        <tr>
+            <td>- 비밀번호 확인</td>
+            <td><input type="password" placeholder="비밀번호 확인"></td>
+        </tr>
+        <tr>
+            <td>- 이름</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>- 성별</td>
+            <td>
+                <input type="radio" name="gender" value="1"><label>남성</label> 
+                <input type="radio" name="gender" value="2"><label>여성</label>
+            </td>
+        </tr>
+        <tr>
+            <td>- 전화번호</td>
+            <td>
+                <select name="address">
+                    <optgroup label="지역번호">
+                        <option>02</option>
+                        <option>031</option>
+                        <option>033</option>
+                        <option>061</option>
+                        <option>010</option>
+                    </optgroup>
+                </select> - <input type="text"> - <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>- 이메일</td>
+            <td>
+                <input type="text"> @
+                <select name="도메인"> 
+                    <optgroup label="지역번호">
+                        <option>선택</option>
+                        <option>naver.com</option>
+                        <option>gmail.com</option>
+                        <option>kakao.com</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>- 자기소개</td>
+            <td><textarea cols="50px" rows="5" placeholder="50자 이내로"></textarea></td>
+        </tr>
+    </table>
+</body>
+</html>
