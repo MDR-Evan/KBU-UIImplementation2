@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion 속성</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            width: 500px;
+            height: 500px;
+            border: 1px solid rgb(179, 115, 115);
+            margin: 50px 0 0 50px;
+            position:relative;
+            
+        }
+        
+        .red, .yellow, .blue {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+            position: absolute;
+            left: 100px;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+    </div>
+</body>
+</html>

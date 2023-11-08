@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 실습</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1{
+            margin: 100px 100px 50px;
+            padding: 10px;
+            text-shadow: 3px 3px 5px #444;
+            color: blue;
+            font-size: 50px;
+            text-align: center;
+            width: 600px;
+            border: 3px solid blue;
+            background-color: skyblue;
+        }
+
+        #box {
+            width: 700px;
+            height: 600px;
+            margin: 20px 0px 0px 60px;
+            border: 2px solid blue;
+            border-radius: 2px;
+        }
+
+        #content {
+            font-size: 35px;
+            margin: 30px 0px 0px 20px;
+            font-family: fantasy;
+        }
+
+        div p {
+            margin: 10px 0px 0px 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #login {
+            margin: 40px 0 0 50px;
+        }
+
+        #img1 {
+            display: inline-block;
+        }
+
+        #key {
+            width: 160px;
+            height: 160px;
+            background-image: url(../week7/img/flower.jpg);
+            background-size: 160px 160px;
+        }
+
+        #join {
+            display: inline-block;
+            margin-left: 130px;
+        }
+
+        #pass {
+            margin-top: 3px;
+        }
+
+        #id_pass span {
+            display: inline-block;
+            width: 80px;
+        }
+
+        #id_pass input {
+            width: 100px;
+            height: 20px;
+        }
+
+        #id_pass, #loginBT {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        #auto_login {
+            margin: 15px 0 0 10px;
+        }
+
+        #loginBT input{
+            width: 50px;
+            height: 50px;
+        }
+
+        #join_find {
+            margin: 15px 0 0 15px;
+        }
+
+        #join_find li {
+            list-style: disc;
+        }
+
+        .parent {
+            margin: 40px 0px 0px 50px;
+            width: 600px;
+            height: 200px;
+            overflow: scroll;
+        }
+
+        .child {
+            height: 10000px;
+            background-attachment: scroll;
+            background-image: url(../week7/img/flower.jpg);
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">우당탕탕 HTML</h1>
+    <div id="box">
+        <h2 id="content">Memver login</h2>
+        <p>회원 가입을 하시면 보다 다양한 혜택을 누리실 수 있습니다.</p>
+        <ul id="login">
+            <li id="img1">
+                <div id="key">
+            
+                </div>
+            </li>
+            <li id="join">
+                <ul id="inputBT">
+                    <li id="id_pass">
+                        <ul>
+                            <li>
+                                <span>아이디</span>
+                                <input type="text">
+                            </li>
+                            <li id="pass">
+                                <span>비밀번호</span>
+                                <input type="password">
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="loginBT">
+                        <input type="submit" value="로그인">
+                    </li>
+                </ul>
+                <div id="auto_login">
+                    <input type="checkbox">자동로그인
+                </div>
+                <ul id="join_find">
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                    <li><a href="#">아이디 또는 비밀번호를 잊으셨나요?</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="parent">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
