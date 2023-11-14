@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+#product {
+    color: green;
+    font-variant: small-caps;
+    text-shadow: 3px 3px 5px greenyellow;
+    border-bottom: 2px orange solid;
+}
+
+#product span{
+    color: black;
+    text-shadow: 3px 3px 5px black;
+}
+
+.item{
+    position: relative;
+}
+
+.img{
+    float: left;
+    margin: 30px;
+    left: 30px;
+    text-align: center;
+}
+
+.img img{
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+
+.title{
+    color: green;
+    font-weight: bold;
+}
+
+.content{
+    color: gray;
+}
+
+.price{
+    color: red;
+    text-decoration: line-through red;
+    font-weight: bold;
+}
+
+.price2{
+    color: red;
+    font-weight: bold;
+}
+
+.blank{
+    clear:left;
+}
