@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .time span{
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 0 0 20px 0;
+            background-color: #dee;
+        }
+        .time:hover span{
+            width: 400px;
+        }
+        .time span:nth-child(1) {
+            transition: all 10s linear;
+        }
+        .time span:nth-child(2) {
+            transition: all 10s ease;
+        }
+        .time span:nth-child(3) {
+            transition: all 10s ease-in;
+        }
+        .time span:nth-child(4) {
+            transition: all 10s ease-out;
+        }
+        .time span:nth-child(5) {
+            transition: all 10s cubic-bezier(.35,.59,.76,-1.39);
+        }
+    </style>
+</head>
+<body>
+    <div class="time">
+        <span>linear</span>
+        <span>ease</span>
+        <span>ease-in</span>
+        <span>ease-out</span>
+        <span>ease-in-out</span>
+    </div>
+</body>
+</html>

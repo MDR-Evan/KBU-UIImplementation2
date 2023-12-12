@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-image: url(/week12/img/main.jpg);
+            background-repeat: no-repeat;
+            /* background-size: 600px 600px; */
+            font-family: "맑은고딕";
+            background-color: #000;
+            color: #fff;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        #left{
+            float: left;
+        }
+
+        #left #tree{
+            width: 150px;
+            height: 700px;
+        }
+
+        #left #tree{
+            margin-left: 50px;
+            margin-top: 180px;
+            transition: all 0.5s linear;
+        }
+
+        #left #tree:hover{
+            transform: rotateY(720deg);
+        }
+
+        #right{
+            float: right;
+            margin-top: 100px;
+            margin-right: 30px;
+        }
+
+        #right #img{
+            width: 250px;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        #right li{
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        #right .title{
+            font-size: 35px;
+            font-weight: bold;
+            color: #2f2;
+            animation: title 1s infinite;
+        }
+
+        @keyframes title{
+            0%{color: #2f2;}
+            25%{color: #fff;}
+            50%{color: #2f2;}
+            75%{color: #ff2;}
+            1000%{color: #2f2;}
+        }
+
+        .date{
+            font-size: 25px;
+        }
+
+        li p{
+            font-size: 20px;
+        }
+        
+        li button{
+            margin-left: 70px;
+            width: 150px;
+            height: 75px;
+            background-color: #2f2;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        li button:hover{
+            transform: scale(2,1.5);
+        }
+
+        .subject span{
+            margin-left: 30px;
+            font-size: 35px;
+            font-family: fantasy;
+            color: #f42;
+            transition: 5s ease-in;
+        }
+
+        .subject span:hover{
+            font-size: 0px;
+        }
+
+        #imote{
+            background-color: #ff2;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contents">
+        <div id="left">
+            <img id="tree" src="./img/christmas trees.png">
+        </div>
+        <div id="right">
+            <ul id="content">
+                <li class="title"><h1>크리스마스 이벤트</h1></li>
+                <li class="date"><h3>일시 : 2023.12.22 ~ 2023.1.15</h3></li>
+                <li><p>크리스마스 이벤트에 참석하시어<br>다양한 혜택을 누리세요</p></li>
+                <li><button type="button">이모트콘 받기</button></li>
+                <ul class="subject"><span>Merry Chistmas</span></ul>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+        div {
+            margin: 50px;
+            background-color: #fdf;
+            width: 100px;
+            height: 100px;
+            animation-name: move;
+            animation-duration: 1s;
+            animation-iteration-count:1;
+            animation-delay: 0.1s;
+            /* animation: fill-mode:forwards; */
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes move {
+            from {
+                background-color: #dff;
+                /* background-color: #f00; */
+            }
+            10% {
+                background-color: #dfdf;
+                /* background-color: #00f; */
+            }
+            20% {
+                background-color: #fdf;
+                /* background-color: #f00; */
+            }
+            30% {
+                background-color: #dffd;
+                /* background-color: #00f; */
+            }
+            40% {
+                background-color: #fddf;
+                /* background-color: #f00; */
+            }
+            50% {
+                background-color: #fdfd;
+                /* background-color: #00f; */
+            }
+            60% {
+                background-color: #ddff;
+                /* background-color: #f00; */
+            }
+            70% {
+                background-color: #ffdd;
+                /* background-color: #00f; */
+            }
+            80% {
+                background-color: #dfdfdf;
+                /* background-color: #f00; */
+            }
+            90% {
+                background-color: #fdfdfd;
+                /* background-color: #00f; */
+            }
+            to {
+                background-color: #ffd;
+                /* background-color: #f00; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

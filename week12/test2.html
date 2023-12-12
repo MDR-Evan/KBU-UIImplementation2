@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .start div{
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 0 0 20px 0;
+            background-color: #dee;
+            border: 1px solid black;
+        }
+        .start:hover span{
+            width: 400px;
+            margin-left: 200px;
+        }
+        .start span:nth-child(1) {
+            transition: all 3s ease 0.2s;
+        }
+        .start span:nth-child(2) {
+            transition: all 3s ease 0.5s;
+        }
+        .start span:nth-child(3) {
+            transition: all 3s ease 0.7s;
+        }
+    </style>
+</head>
+<body>
+    <div class="start">
+        <div><span>1</span></div>
+        <div><span>2</span></div>
+        <div><span>3</span></div>
+    </div>
+</body>
+</html>

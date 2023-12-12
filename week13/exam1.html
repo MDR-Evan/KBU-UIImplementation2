@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        span{
+            font-size: 12px;
+            margin: 0;
+            animation: sizeUp;
+            animation-duration: 10s;
+        }
+        span:active{
+            font-size: 500%;
+            margin-left: 500px;
+            transition: all 10s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <span>BOMB!!</span>
+</body>
+</html>
